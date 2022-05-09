@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+ 
+@import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+@font-face {
+    font-family: Sans;
+    src: url(../fonts/KumbhSans-Bold.ttf);
+}
+
+
+*{
+    font-family: Sans;
+   
+}
+
+@mixin margin($size) {
+    margin-left:$size;
+    
+     
+  }
+
+.ml-100{
+   @include margin(100px);
+}
+
+.ml-9{
+    @include margin(9px);
+ }
+
+ .ml-30{
+    @include margin(30%);
+ }
+ 
+
+
+@mixin text($theme) {
+    color:$theme;
+  }
+  
+ .text-blue{
+     @include text(blue)
+ }
+
+ .text-lightBlue{
+     @include text(rgb(0, 174, 255))
+ }
+
+ .text-purple{
+    @include text(rgb(255, 0, 149))
+}
+ 
+.text-button{
+    @include text(rgb(246 65 81))
+}
+
+.bg-image{
+    background-image: url('https://wallpapercave.com/wp/wp6425178.jpg');
+    height: 100%;
+    width: 100%;
+}
+
+@mixin bg($theme) {
+    background-color:$theme;
+  }
+  
+  
+  .bg-blu{
+    @include bg(blue)
+}
+
+.bg-purple{
+    @include bg(#5c36b0)
+}
+
+.bg-button{
+    @include bg(rgb(246 65 81))
+}
+
